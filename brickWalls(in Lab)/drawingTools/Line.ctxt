@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Line()
+comment0.text=\n\ Constructor\ for\ Line\ objects.\ \ \n\ All\ new\ lines\ are\ positioned\ at\ (0,0)\ with\ the\ end\ of\ the\ line\ at\ (100,100).\n\ New\ lines\ are\ black\ and\ initially\ not\ visible.\n
+comment1.params=startX\ startY\ endX\ endY\ color
+comment1.target=Line(int,\ int,\ int,\ int,\ java.lang.String)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Line.\n\ @param\ startX\ the\ X\ coordinate\ of\ the\ start\ of\ the\ line.\n\ @param\ startY\ the\ Y\ coordinate\ of\ the\ start\ of\ the\ line.\n\ @param\ endX\ the\ X\ coordinate\ of\ the\ end\ of\ the\ line.\n\ @param\ endY\ the\ Y\ coordinate\ of\ the\ end\ of\ the\ line.\n\ @param\ color\ the\ color\ of\ the\ line.\n
+comment2.params=
+comment2.target=int\ getStartX()
+comment2.text=\n\ @return\ the\ X\ coordinate\ of\ the\ start\ of\ the\ line.\n
+comment3.params=
+comment3.target=int\ getStartY()
+comment3.text=\n\ @return\ the\ Y\ coordinate\ of\ the\ start\ of\ the\ line.\n
+comment4.params=
+comment4.target=int\ getEndX()
+comment4.text=\n\ @return\ the\ X\ coordinate\ of\ the\ end\ of\ the\ line.\n
+comment5.params=
+comment5.target=int\ getEndY()
+comment5.text=\n\ @return\ the\ Y\ coordinate\ of\ the\ end\ of\ the\ line.\n
+comment6.params=x\ y
+comment6.target=void\ setStartPosition(int,\ int)
+comment6.text=\n\ Set\ a\ new\ position\ for\ the\ start\ of\ the\ line.\n\ @param\ x\ the\ x\ coordinate\ of\ the\ start\ of\ the\ line.\n\ @param\ y\ the\ y\ coordinate\ of\ the\ start\ of\ the\ line.\n
+comment7.params=x\ y
+comment7.target=void\ setEndPosition(int,\ int)
+comment7.text=\n\ Set\ a\ new\ position\ for\ the\ end\ of\ the\ line.\n\ @param\ x\ the\ x\ coordinate\ of\ the\ end\ of\ the\ line.\n\ @param\ y\ the\ y\ coordinate\ of\ the\ end\ of\ the\ line.\n
+numComments=8

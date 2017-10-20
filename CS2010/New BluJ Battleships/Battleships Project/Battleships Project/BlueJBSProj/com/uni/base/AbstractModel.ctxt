@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=AbstractModel
+comment0.text=\r\n\ This\ class\ provides\ base\ level\ functionality\ for\ all\ models,\ including\ a\r\n\ support\ for\ a\ property\ change\ mechanism\ (using\ the\ PropertyChangeSupport\ class),\r\n\ as\ well\ as\ a\ convenience\ method\ that\ other\ objects\ can\ use\ to\ reset\ model\ state.\r\n\ @author\ Robert\ Eckstein\ edited\ by\ dogmaan\r\n
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment2.params=name
+comment2.target=void\ setName(java.lang.String)
+comment3.params=
+comment3.target=void\ initDefault()
+comment4.params=
+comment4.target=AbstractModel()
+comment4.text=\r\n\ Default\ constructor.\ Instantiates\ the\ PropertyChangeSupport\ class.\r\n
+comment5.params=l
+comment5.target=void\ addPropertyChangeListener(java.beans.PropertyChangeListener)
+comment5.text=\r\n\ Adds\ a\ property\ change\ listener\ to\ the\ observer\ list.\r\n\ @param\ l\ The\ property\ change\ listener\r\n
+comment6.params=l
+comment6.target=void\ removePropertyChangeListener(java.beans.PropertyChangeListener)
+comment6.text=\r\n\ Removes\ a\ property\ change\ listener\ from\ the\ observer\ list.\r\n\ @param\ l\ The\ property\ change\ listener\r\n
+comment7.params=propertyName\ oldValue\ newValue
+comment7.target=void\ firePropertyChange(java.lang.String,\ java.lang.Object,\ java.lang.Object)
+comment7.text=\r\n\ Fires\ an\ event\ to\ all\ registered\ listeners\ informing\ them\ that\ a\ property\ in\r\n\ this\ model\ has\ changed.\r\n\ @param\ propertyName\ The\ name\ of\ the\ property\r\n\ @param\ oldValue\ The\ previous\ value\ of\ the\ property\ before\ the\ change\r\n\ @param\ newValue\ The\ new\ property\ value\ after\ the\ change\r\n
+numComments=8

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Observer
+comment0.text=\r\n\ Allows\ subscribed\ classes\ to\ receive\ model\ property\ change\ events\r\n
+comment1.params=evt
+comment1.target=void\ modelPropertyChange(java.beans.PropertyChangeEvent)
+numComments=2

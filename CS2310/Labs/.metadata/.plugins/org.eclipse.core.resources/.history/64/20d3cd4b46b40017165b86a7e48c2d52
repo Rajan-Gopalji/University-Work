@@ -1,0 +1,192 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import javax.swing.*;
+import javax.swing.border.*;
+
+import jdk.nashorn.internal.scripts.JO;
+
+public class ChessBoardWithColumnsAndRows {
+
+	private JFrame mainFrame;
+    private final JPanel gui = new JPanel(new BorderLayout(2, 1));
+    private JButton[][] gridSquares = new JButton[10][10];
+    private JPanel gameBoard;
+   
+    private static final String COLS = "ABCDEFGHIJ";
+
+    ChessBoardWithColumnsAndRows() {
+        initialiseGui();
+    }
+
+    public final void initialiseGui() {
+        // set up the main GUI
+        gui.setBorder(new EmptyBorder(0, 0, 0, 0));
+        JToolBar tools = new JToolBar();
+        tools.setFloatable(false);
+        gui.add(tools, BorderLayout.PAGE_START);
+        JButton newGame = new JButton("New Game");
+        tools.add(newGame);
+        tools.addSeparator();
+        JButton quitButton = new JButton("Quit");
+        tools.add(quitButton);
+        tools.addSeparator();
+        JButton helpButton = new JButton("Help");
+        tools.add(helpButton);
+        
+        
+        
+        
+        //quitButton.setText("Quit ");
+        quitButton.setToolTipText("Click to Quit Game ");
+        newGame.setToolTipText("Click to start a New Game");
+        helpButton.setToolTipText("Need help bitchboy? Click here.");
+        //quitButton.setBorder(BorderFactory.createRaisedSoftBevelBorder());
+		//quitButton.setForeground(Color.BLACK);
+		
+		
+		
+        newGame.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				resetBoard();				
+			}
+		});
+		
+		quitButton.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){ 
+				exitApp();
+			}
+		});
+		
+		helpButton.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				showHelp();
+				
+			}
+		});	
+		
+
+        gui.add(new JLabel("You have " + ""/*getMethod to retrieve numShips player has left*/ + " ships left!"), BorderLayout.LINE_START);
+        gui.add(new JLabel("Number of enemy ships immobilised: "), BorderLayout.LINE_END);
+
+        gameBoard = new JPanel(new GridLayout(10, 0));
+        //gameBoard.setBorder(new LineBorder(Color.BLACK));
+        gui.add(gameBoard);
+
+        // create the chess board squares
+        Insets buttonMargin = new Insets(10,10,10,10);
+        for (int i = 0; i < gridSquares.length; i++) {
+            for (int jj = 0; jj < gridSquares[i].length; jj++) {
+                JButton b = new JButton();
+                b.setMargin(buttonMargin);
+                // our chess pieces are 64x64 px in size, so we'll
+                // 'fill this in' using a transparent icon..
+                new BufferedImage(50, 50, BufferedImage.TYPE_INT_ARGB);
+                b.setBackground(Color.BLUE);
+                gridSquares[jj][i] = b;
+            }
+        }
+
+        //fill the chess board
+        gameBoard.add(new JLabel(""));
+        // fill the top row
+        for (int ii = 0; ii < 8; ii++) {
+            gameBoard.add(
+                    new JLabel(COLS.substring(ii, ii + 1),
+                    SwingConstants.CENTER));
+        }
+        // fill the black non-pawn piece row
+        for (int ii = 0; ii < 8; ii++) {
+            for (int jj = 0; jj < 8; jj++) {
+                switch (jj) {
+                    case 0:
+                        gameBoard.add(new JLabel("" + (ii + 1),
+                                SwingConstants.CENTER));
+                    default:
+                        gameBoard.add(gridSquares[jj][ii]);
+                }
+            }
+        }
+    }
+
+    public final JComponent getChessBoard() {
+        return gameBoard;
+    }
+
+    public final JComponent getGui() {
+        return gui;
+    }
+
+    public static void main(String[] args) {
+        Runnable r = new Runnable() {
+
+            @Override
+            public void run() {
+                ChessBoardWithColumnsAndRows cb =
+                        new ChessBoardWithColumnsAndRows();
+
+                JFrame mainFrame = new JFrame("ChessChamp");
+                mainFrame.add(cb.getGui());
+                mainFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                mainFrame.setLocationByPlatform(true);
+
+                // ensures the frame is the minimum size it needs to be
+                // in order display the components within it
+                mainFrame.pack();
+                // ensures the minimum size is enforced.
+                mainFrame.setMinimumSize(mainFrame.getSize());
+                mainFrame.setVisible(true);
+            }
+        };
+        SwingUtilities.invokeLater(r);
+    }
+    
+    private void resetBoard(){
+    	int response = JOptionPane.showConfirmDialog(
+    			mainFrame, "Do you want to start a new game?", "New Game", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+    	if (response == JOptionPane.YES_OPTION){
+    		//code to reset the game board
+    	}
+    }
+    
+    private void exitApp(){
+   		
+   		int response = JOptionPane.showConfirmDialog(
+   				mainFrame, "Are you sure you want to quit the game?", "Quit", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+   		
+   		if (response == JOptionPane.YES_OPTION){
+   			System.exit(0);
+   		}
+   	}
+    
+    private void showHelp(){
+		int xSize = 700;
+		int ySize = 400;
+		int blankSpace = 5;
+		JFrame helpWindow = new JFrame("Game Help");
+		helpWindow.setPreferredSize(new Dimension(xSize,ySize));
+		helpWindow.setMinimumSize(new Dimension(xSize,ySize));
+		((JPanel)helpWindow.getContentPane()).setBorder(new EmptyBorder(blankSpace, blankSpace, blankSpace, blankSpace));
+		helpWindow.setLocationRelativeTo(null);
+		
+		String helpInput = 
+		"THIS IS WHERE THE GAME RULES GO " + "\n" + "THIS IS WHERE THE GAME RULES GO " + "\n" + "THIS IS WHERE THE GAME RULES GO "
+				+ "\n" + "THIS IS WHERE THE GAME RULES GO " + "\n" + "THIS IS WHERE THE GAME RULES GO ";		
+		JTextArea helpText = new JTextArea(helpInput);
+		helpText.setLayout(new FlowLayout());
+		helpText.setEditable(false);
+		//helpText.setForeground(Color.WHITE);
+		helpText.setBackground(new Color(211,211,211));
+		
+		helpWindow.getContentPane().setBackground(new Color(169, 169, 169));
+		helpWindow.add(helpText);
+		helpWindow.pack();
+		helpWindow.setVisible(true);
+	}
+       
+}

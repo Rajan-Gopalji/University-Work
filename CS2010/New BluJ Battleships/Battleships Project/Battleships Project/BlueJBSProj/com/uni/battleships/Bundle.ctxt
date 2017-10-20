@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Bundle
+comment0.text=\r\n\ User\:\ dogmaan\r\n\ Date\:\ 28/06/12\r\n\ Time\:\ 12\:12\r\n\ A\ Class\ that\ holds\ {Key,\ Object}\ pair\ values\ for\ generic\ communication\r\n
+comment1.params=
+comment1.target=Bundle()
+comment2.params=key\ value
+comment2.target=void\ add(java.lang.String,\ java.lang.Object)
+comment3.params=key
+comment3.target=java.lang.Object\ get(java.lang.String)
+numComments=4

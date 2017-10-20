@@ -1,0 +1,15 @@
+
+public abstract class Ship {
+	
+	protected String shipName;
+	protected int shipLength;
+	protected boolean isDestroyed;
+	protected int xCoordinate;
+	protected int yCoordinate;
+	protected String nationName;
+
+	public abstract void setLocation(int xCoordinate, int yCoordinate);
+	
+	public abstract void();
+
+}

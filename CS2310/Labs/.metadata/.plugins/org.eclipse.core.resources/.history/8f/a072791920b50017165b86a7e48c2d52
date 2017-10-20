@@ -1,0 +1,35 @@
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.border.*;
+
+import javafx.scene.layout.Border;
+
+public class Grid 
+{
+     private final JPanel gui = new JPanel(new BorderLayout(3,3));
+     private JButton[][] battleshipGrid= new JButton[10][10];
+     private JPanel battleshipBoard;
+     private static final String Column = "ABCDEFGHIJ";
+     
+     public final void intialiseGUI(){
+    	 gui.setBorder(new EmptyBorder(5, 5, 5, 5));
+    	 
+     }
+    /*public static void main(String[] args){
+        int[][] grid = new int[10][10];
+ 
+        for (int i = 0; i < grid.length; i++){
+            for ( int j = 0; j < grid[i].length; j++){
+                grid[i][j] = 0;
+            }
+        }
+         
+        for (int i = 0; i < grid.length; i++){
+            System.out.println();
+            for ( int j = 0; j < grid[i].length; j++){
+                System.out.print(grid[i][j]);
+            }
+        }
+    }
+   */ 
+}

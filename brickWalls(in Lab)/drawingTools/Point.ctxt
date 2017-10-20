@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Point()
+comment0.text=\n\ Create\ a\ new\ point\ with\ random\ X\ and\ Y\ coordinates\n
+comment1.params=x\ y
+comment1.target=Point(int,\ int)
+comment1.text=\n\ Create\ a\ point\ with\ specified\ X\ and\ Y\ coordinates\n
+comment2.params=
+comment2.target=int\ getX()
+comment2.text=\n\ @return\ the\ X\ coordinate\ of\ this\ point.\n
+comment3.params=
+comment3.target=int\ getY()
+comment3.text=\n\ @return\ the\ Y\ coordinate\ of\ this\ point.\n
+comment4.params=x
+comment4.target=void\ setX(java.lang.Integer)
+comment4.text=\n\ Set\ a\ new\ value\ for\ the\ X\ coordinate\ of\ this\ point.\n\ @param\ x\ the\ new\ X\ coordinate\n
+comment5.params=y
+comment5.target=void\ setY(java.lang.Integer)
+comment5.text=\n\ Set\ a\ new\ value\ for\ the\ Y\ coordinate\ of\ this\ point.\n\ @param\ y\ the\ new\ Y\ coordinate\n
+numComments=6

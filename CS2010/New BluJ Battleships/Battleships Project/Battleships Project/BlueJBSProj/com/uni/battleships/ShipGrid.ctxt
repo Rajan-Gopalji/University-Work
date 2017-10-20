@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ShipGrid
+comment1.params=x\ y\ obj
+comment1.target=boolean\ willObjectFit(int,\ int,\ Ship)
+comment2.params=x\ y\ obj
+comment2.target=boolean\ addObject(int,\ int,\ Ship)
+comment3.params=
+comment3.target=char[]\ getCharArray()
+comment4.params=aWidth\ tShips\ i\ j
+comment4.target=void\ calcShipChars(int,\ char[],\ int,\ int)
+numComments=5

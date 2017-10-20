@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Rectangle()
+comment0.text=\n\ Constructor\ for\ Rectangle\ objects.\ New\ Rectangle\ objects\ are\ all\n\ positioned\ with\ their\ top\ left\ hand\ corner\ at\ (300,100),\ have\ a\ length\ of\n\ 50\ and\ a\ height\ of\ 30,\ are\ coloured\ red\ and\ are\ initially\ invisible.\n
+comment1.params=width\ height
+comment1.target=Rectangle(java.lang.Integer,\ java.lang.Integer)
+comment1.text=\n\ Constructor\ for\ Rectangle\ objects.\ New\ Rectangle\ objects\ are\ all\n\ positioned\ with\ their\ top\ left\ hand\ corner\ at\ (60,50),\ are\ coloured\ red\n\ and\ are\ initially\ invisible.\ Using\ this\ constructor\ the\ length\ and\ height\n\ of\ the\ rectangle\ can\ be\ provided\ as\ parameters\ at\ runtime.\n\ \n\ @param\ length\n\ \ \ \ \ \ \ \ \ \ \ \ The\ initial\ length\ of\ the\ rectangle\n\ @param\ height\n\ \ \ \ \ \ \ \ \ \ \ \ The\ initial\ height\ of\ the\ rectangle\n
+comment2.params=newLength\ newHeight
+comment2.target=void\ changeSize(java.lang.Integer,\ java.lang.Integer)
+comment2.text=\n\ Change\ the\ length\ and\ height\ of\ the\ rectangle\ to\ the\ given\ values.\ The\n\ value\ of\ length\ and\ height\ must\ each\ be\ >\=\ 0.\n\ \n\ @param\ newLength\n\ \ \ \ \ \ \ \ \ \ \ \ the\ new\ length\ of\ the\ rectangle.\n\ @param\ newHeight\n\ \ \ \ \ \ \ \ \ \ \ \ the\ new\ height\ of\ the\ rectangle.\n
+comment3.params=
+comment3.target=java.lang.Integer\ getWidth()
+comment3.text=\n\ @return\ the\ width\ of\ the\ rectangle.\n
+comment4.params=width
+comment4.target=void\ setWidth(java.lang.Integer)
+comment4.text=\n\ Set\ a\ new\ width\ for\ the\ rectangle.\n\ @param\ width\ is\ the\ new\ width\ for\ the\ rectangle.\n
+comment5.params=
+comment5.target=java.lang.Integer\ getHeight()
+comment5.text=\n\ @return\ the\ height\ of\ the\ rectangle.\n
+comment6.params=height
+comment6.target=void\ setHeight(java.lang.Integer)
+comment6.text=\n\ Set\ a\ new\ height\ for\ the\ rectangle.\n\ @param\ height\ the\ new\ height\ of\ the\ rectangle.\n
+numComments=7

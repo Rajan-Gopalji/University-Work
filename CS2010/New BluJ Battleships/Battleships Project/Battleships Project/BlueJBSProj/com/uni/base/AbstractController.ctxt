@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=AbstractController
+comment0.text=\r\n\ This\ class\ provides\ base\ level\ functionality\ for\ each\ controller.\ This\ includes\ the\r\n\ ability\ to\ register\ multiple\ models\ and\ views,\ propagating\ model\ change\ events\ to\r\n\ each\ of\ the\ views,\ and\ providing\ a\ utility\ function\ to\ broadcast\ model\ property\r\n\ changes\ when\ necessary.\r\n\ @author\ Robert\ Eckstein\ edited\ by\ dogmaan\r\n
+comment1.params=
+comment1.target=AbstractController()
+comment1.text=Creates\ a\ new\ instance\ of\ Controller
+comment2.params=model
+comment2.target=void\ addModel(AbstractModel)
+comment2.text=\r\n\ Binds\ a\ model\ to\ this\ controller.\ Once\ added,\ the\ controller\ will\ listen\ for\ all\r\n\ model\ property\ changes\ and\ propagate\ them\ on\ to\ registered\ views.\ In\ addition,\r\n\ it\ is\ also\ responsible\ for\ resetting\ the\ model\ properties\ when\ a\ view\ changes\r\n\ state.\r\n\ @param\ model\ The\ model\ to\ be\ added\r\n
+comment3.params=model
+comment3.target=void\ removeModel(AbstractModel)
+comment3.text=\r\n\ Unbinds\ a\ model\ from\ this\ controller.\r\n\ @param\ model\ The\ model\ to\ be\ removed\r\n
+comment4.params=view
+comment4.target=void\ addView(Observer)
+comment4.text=\r\n\ Binds\ a\ view\ to\ this\ controller.\ The\ controller\ will\ propagate\ all\ model\ property\r\n\ changes\ to\ each\ view\ for\ consideration.\r\n\ @param\ view\ The\ view\ to\ be\ added\r\n
+comment5.params=view
+comment5.target=void\ removeView(Observer)
+comment5.text=\r\n\ Unbinds\ a\ view\ from\ this\ controller.\r\n\ @param\ view\ The\ view\ to\ be\ removed\r\n
+comment6.params=evt
+comment6.target=void\ propertyChange(java.beans.PropertyChangeEvent)
+comment6.text=\r\n\ This\ method\ is\ used\ to\ implement\ the\ PropertyChangeListener\ interface.\ Any\ model\r\n\ changes\ will\ be\ sent\ to\ this\ controller\ through\ the\ use\ of\ this\ method.\r\n\ @param\ evt\ An\ object\ that\ describes\ the\ model's\ property\ change.\r\n
+comment7.params=propertyName\ newValue
+comment7.target=void\ setModelProperty(java.lang.String,\ java.lang.Object)
+comment7.text=\r\n\ Convenience\ method\ that\ subclasses\ can\ call\ upon\ to\ fire\ off\ property\ changes\r\n\ back\ to\ the\ models.\ This\ method\ used\ reflection\ to\ inspect\ each\ of\ the\ model\r\n\ classes\ to\ determine\ if\ it\ is\ the\ owner\ of\ the\ property\ in\ question.\ If\ it\r\n\ isn't,\ a\ NoSuchMethodException\ is\ throws\ (which\ the\ method\ ignores).\r\n\r\n\ @param\ propertyName\ The\ name\ of\ the\ property\r\n\ @param\ newValue\ An\ object\ that\ represents\ the\ new\ value\ of\ the\ property.\r\n
+numComments=8

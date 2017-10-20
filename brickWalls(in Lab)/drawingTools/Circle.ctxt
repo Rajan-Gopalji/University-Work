@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Circle()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Circle.\ \ \n\ New\ Circle\ objects\ are\ blue\ and\ positioned\ with\ their\ centre\ at\ (100,150).\n\ The\ initial\ diameter\ by\ default\ is\ 40.\n
+comment1.params=initialDiameter
+comment1.target=Circle(int)
+comment1.text=\n\ Construct\ a\ new\ Circle\ with\ a\ given\ diameter.\n\ New\ Circle\ objects\ are\ blue\ and\ positioned\ with\ their\ centre\ at\ (100,150).\n\ @param\ initialDiameter\ The\ diameter\ of\ the\ new\ circle.\n
+comment2.params=newDiameter
+comment2.target=void\ changeSize(int)
+comment2.text=\n\ Change\ the\ diameter\ of\ the\ circle\ to\ the\ new\ size\ (in\ pixels).\ \n\ @param\ newDiameter\ the\ new\ diameter\ of\ the\ circle.\n
+comment3.params=
+comment3.target=int\ getDiameter()
+comment3.text=\n\ @return\ the\ diameter\ of\ the\ circle.\n
+numComments=4

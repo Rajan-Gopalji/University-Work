@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=CPUPlayer
+comment0.text=\r\n\ User\:\ dogmaan\r\n\ Date\:\ 06/06/12\r\n\ Time\:\ 16\:33\r\n
+comment1.params=sceneController\ playerNumber
+comment1.target=CPUPlayer(SceneController,\ int)
+comment2.params=evt
+comment2.target=void\ modelPropertyChange(java.beans.PropertyChangeEvent)
+numComments=3

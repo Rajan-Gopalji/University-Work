@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=AbstractViewPanel
+comment0.text=\r\n\ This\ class\ provides\ the\ base\ level\ abstraction\ for\ views\ in\ this\ example.\ All\r\n\ views\ that\ extend\ this\ class\ also\ extend\ JPanel\ (which\ is\ useful\ for\ performing\r\n\ GUI\ manipulations\ on\ the\ view\ in\ NetBeans\ Matisse),\ as\ well\ as\ providing\ the\r\n\ modelPropertyChange()\ method\ that\ controllers\ can\ use\ to\ propagate\ model\r\n\ property\ changes.\r\n\r\n\ @author\ Robert\ Eckstein\ edited\ by\ dogmaan\r\n
+comment1.params=evt
+comment1.target=void\ modelPropertyChange(java.beans.PropertyChangeEvent)
+comment1.text=\r\n\ Called\ by\ the\ controller\ when\ it\ needs\ to\ pass\ along\ a\ property\ change\r\n\ from\ a\ model.\r\n\r\n\ @param\ evt\ The\ property\ change\ event\ from\ the\ model\r\n
+numComments=2

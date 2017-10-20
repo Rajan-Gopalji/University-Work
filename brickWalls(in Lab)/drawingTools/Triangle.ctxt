@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Triangle()
+comment0.text=\n\ Create\ a\ new\ triangle\ at\ default\ position\ with\ default\ color.\n\ New\ Triangle\ objects\ are\ green\ and\ positioned\ with\ their\ tip\ at\ (250,250)\ \n\ with\ a\ height\ of\ 40\ and\ a\ width\ of\ 50.\n
+comment1.params=height\ width
+comment1.target=Triangle(int,\ int)
+comment1.text=\n\ Create\ a\ new\ triangle\ of\ a\ given\ height\ and\ width\ at\ default\ position\n\ with\ default\ color.\ \ New\ Triangles\ are\ green\ and\ positioned\ with\ their\ \n\ tip\ at\ (250,250).\n\ @param\ height\ the\ height\ of\ the\ triangle.\n\ @param\ width\ the\ width\ of\ the\ base\ of\ the\ triangle\n
+comment2.params=newHeight\ newWidth
+comment2.target=void\ changeSize(int,\ int)
+comment2.text=\n\ Change\ the\ height\ and\ width\ to\ the\ new\ size\ (in\ pixels).\n\ @param\ newHeight\ the\ new\ hight\ of\ the\ triangle.\n\ @param\ newWidth\ the\ new\ width\ of\ the\ triangle.\n
+numComments=3

@@ -1,0 +1,9 @@
+
+public class TestT {
+
+	private String test;
+	
+	public TestT(String test){
+		this.test = "Willy";
+	}
+}

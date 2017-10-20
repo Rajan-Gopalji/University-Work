@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ShotGrid
+comment0.text=\r\n\ User\:\ dogmaan\r\n\ Date\:\ 06/06/12\r\n\ Time\:\ 16\:12\r\n
+comment1.params=x\ y\ obj
+comment1.target=boolean\ addObject(int,\ int,\ Shot)
+comment2.params=x\ y\ obj
+comment2.target=boolean\ willObjectFit(int,\ int,\ Shot)
+comment3.params=
+comment3.target=char[]\ getCharArray()
+comment4.params=aWidth\ tShots\ i\ j
+comment4.target=void\ calculateShotChars(int,\ char[],\ int,\ int)
+numComments=5

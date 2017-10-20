@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AddressBook()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ AddressBook\n
+comment1.params=address
+comment1.target=void\ addAddress(Address)
+comment1.text=\n\ Store\ a\ new\ address\ into\ the\ address\ book.\n\ @param\ address\ The\ Address\ object\ to\ be\ added\ to\ the\ list\n
+numComments=2

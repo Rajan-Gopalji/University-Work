@@ -1,0 +1,36 @@
+#BlueJ class context
+comment0.params=text
+comment0.target=Text(java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Text.\n\ New\ Text\ objects\ are\ black\ and\ positioned\ with\ their\ bottom\ left\ hand\ corner\ at\ (200,100).\n\ \n\ @param\ text\n\ \ \ \ \ \ \ \ \ \ \ \ a\ bit\ of\ text.\n
+comment1.params=
+comment1.target=void\ setFont()
+comment10.params=
+comment10.target=java.lang.Integer\ getTextHeight()
+comment10.text=\n\ Find\ the\ height\ of\ the\ text\ in\ the\ selected\ font.\n\ \n\ @return\ the\ height\ of\ the\ text\n
+comment11.params=ms
+comment11.target=void\ wait(java.lang.Integer)
+comment2.params=newSize
+comment2.target=void\ changeSize(java.lang.Integer)
+comment2.text=\n\ Change\ the\ font\ size\ of\ the\ text\ to\ a\ given\ value.\ The\ value\ of\ newSize\n\ must\ be\ >\=\ 0.\n\ \n\ @param\ newSize\n\ \ \ \ \ \ \ \ \ \ \ \ the\ new\ font\ size\ of\ the\ text.\n
+comment3.params=
+comment3.target=void\ printFonts()
+comment3.text=\n\ Print\ the\ names\ of\ all\ the\ available\ fonts\ to\ the\ console.\n
+comment4.params=newFontName
+comment4.target=void\ changeFont(java.lang.String)
+comment4.text=\n\ Change\ the\ font.\ Valid\ font\ names\ can\ be\ found\ by\ calling\ printFonts().\n\ \n\ @param\ newFontName\n\ \ \ \ \ \ \ \ \ \ \ \ the\ name\ of\ the\ new\ font\ family.\n
+comment5.params=
+comment5.target=java.lang.Integer\ getFontSize()
+comment5.text=\n\ @return\ the\ size\ of\ the\ font.\n
+comment6.params=
+comment6.target=java.lang.String\ getText()
+comment6.text=\n\ @return\ the\ text\ itself.\n
+comment7.params=
+comment7.target=java.lang.String\ getFontName()
+comment7.text=\n\ The\ name\ of\ the\ current\ font.\n
+comment8.params=
+comment8.target=void\ randomizePosition()
+comment8.text=\n\ Reposition\ the\ text\ at\ a\ new,\ random\ position\ on\ the\ canvas.\n
+comment9.params=
+comment9.target=java.lang.Integer\ getTextWidth()
+comment9.text=\n\ Find\ the\ width\ of\ the\ text\ in\ the\ selected\ font.\n\ \n\ @return\ the\ width\ of\ the\ text\n
+numComments=12

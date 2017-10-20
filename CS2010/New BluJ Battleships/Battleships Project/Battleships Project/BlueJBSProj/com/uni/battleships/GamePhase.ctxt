@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.target=GamePhase
+comment0.text=\r\n\ this\ enumerator\ is\ used\ to\ establish\ what\ phase\ the\r\n\ current\ game\ state\ is\ in\r\n
+numComments=1

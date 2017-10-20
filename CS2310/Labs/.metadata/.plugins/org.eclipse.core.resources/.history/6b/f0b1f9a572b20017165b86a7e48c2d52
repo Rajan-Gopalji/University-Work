@@ -1,0 +1,8 @@
+
+public class Ship {
+	protected String shipName;
+	protected int shipLength;
+	protected boolean isDestroyed;
+	protected int xCoordinate;
+	protected int yCoordinate;
+}

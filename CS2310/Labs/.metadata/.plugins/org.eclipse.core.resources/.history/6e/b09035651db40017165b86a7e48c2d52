@@ -1,0 +1,20 @@
+public class Grid 
+{
+     
+    public static void main(String[] args){
+        int[][] grid = new int[8][8];
+ 
+        for (int i = 0; i < shipGrid.length; i++){
+            for ( int j = 0; j < shipGrid[i].length; j++){
+                shipGrid[i][j] = 0;
+            }
+        }
+         
+        for (int i = 0; i < grid.length; i++){
+            System.out.println();
+            for ( int j = 0; j < grid[i].length; j++){
+                System.out.print(grid[i][j]);
+            }
+        }
+    }
+}

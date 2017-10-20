@@ -1,0 +1,191 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import javax.swing.*;
+import javax.swing.border.*;
+
+import jdk.nashorn.internal.scripts.JO;
+
+public class GridColumnsAndRows {
+
+	private JFrame mainFrame;
+    private final JPanel gui = new JPanel(new BorderLayout(2, 1));
+    private JButton[][] gridSquares = new JButton[10][10];
+    private JPanel gameBoard;
+   
+    private static final String COLS = "ABCDEFGHIJ";
+
+    GridColumnsAndRows() {
+        initialiseGui();
+    }
+
+    public final void initialiseGui() {
+        // set up the main GUI
+        //gui.setBorder(new EmptyBorder(0, 0, 0, 0));
+        JToolBar toolbar = new JToolBar();
+        toolbar.setFloatable(false);
+        gui.add(toolbar, BorderLayout.PAGE_START);
+        JButton newGame = new JButton("New Game");
+        toolbar.add(newGame);
+        toolbar.addSeparator();
+        JButton quitButton = new JButton("Quit");
+        toolbar.add(quitButton);
+        toolbar.addSeparator();
+        JButton helpButton = new JButton("Help");
+        toolbar.add(helpButton);
+        
+        
+        
+        
+        //quitButton.setText("Quit ");
+        quitButton.setToolTipText("Click to Quit Game ");
+        newGame.setToolTipText("Click to start a New Game");
+        helpButton.setToolTipText("Need help bitchboy? Click here.");
+        //quitButton.setBorder(BorderFactory.createRaisedSoftBevelBorder());
+		//quitButton.setForeground(Color.BLACK);
+		
+		
+		
+        newGame.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				resetBoard();				
+			}
+		});
+		
+		quitButton.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){ 
+				exitApp();
+			}
+		});
+		
+		helpButton.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				showHelp();
+				
+			}
+		});	
+		
+
+        gui.add(new JLabel("You have " + "N"/*getMethod to retrieve numShips player has left*/ + " ships left!"), BorderLayout.LINE_START);
+        gui.add(new JLabel("Number of enemy ships immobilised: "), BorderLayout.LINE_END);
+
+        gameBoard = new JPanel(new GridLayout(10, 10));
+        //gameBoard.setBorder(new LineBorder(Color.BLACK));
+        gui.add(gameBoard);
+
+        // create the grid squares
+        Insets buttonMargin = new Insets(30,30,30,30);
+        for (int i = 0; i < gridSquares.length; i++) {
+            for (int j = 0; j < gridSquares[i].length; j++) {
+                JButton b = new JButton();
+                b.setMargin(buttonMargin);
+                
+                new BufferedImage(50, 50, BufferedImage.TYPE_INT_ARGB);
+                b.setBackground(Color.BLUE);
+                gridSquares[j][i] = b;
+            }
+        }
+
+        
+        gameBoard.add(new JLabel(""));
+        
+        for (int ii = 0; ii < 10; ii++) {
+            gameBoard.add(
+                    new JLabel(COLS.substring(ii, ii + 1),
+                    SwingConstants.CENTER));
+        }
+        
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                switch (j) {
+                    case 0:
+                        gameBoard.add(new JLabel("" + (i + 1),
+                                SwingConstants.CENTER));
+                    default:
+                        gameBoard.add(gridSquares[i][i]);
+                }
+            }
+        }
+    }
+
+    public final JComponent getGameBoard() {
+        return gameBoard;
+    }
+
+    public final JComponent getGui() {
+        return gui;
+    }
+
+    public static void main(String[] args) {
+        Runnable r = new Runnable() {
+
+            @Override
+            public void run() {
+                GridColumnsAndRows gb =
+                        new GridColumnsAndRows();
+
+                JFrame mainFrame = new JFrame("BattleShips");
+                mainFrame.add(gb.getGui());
+                mainFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                mainFrame.setLocationByPlatform(true);
+
+                // ensures the frame is the minimum size it needs to be
+                // in order display the components within it
+                mainFrame.pack();
+                // ensures the minimum size is enforced.
+                mainFrame.setMinimumSize(mainFrame.getSize());
+                mainFrame.setVisible(true);
+            }
+        };
+        SwingUtilities.invokeLater(r);
+    }
+    
+    private void resetBoard(){
+    	int response = JOptionPane.showConfirmDialog(
+    			mainFrame, "Do you want to start a new game?", "New Game", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+    	if (response == JOptionPane.YES_OPTION){
+    		//code to reset the game board
+    	}
+    }
+    
+    private void exitApp(){
+   		
+   		int response = JOptionPane.showConfirmDialog(
+   				mainFrame, "Are you sure you want to quit the game?", "Quit", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+   		
+   		if (response == JOptionPane.YES_OPTION){
+   			System.exit(0);
+   		}
+   	}
+    
+    private void showHelp(){
+		int xSize = 700;
+		int ySize = 400;
+		int blankSpace = 5;
+		JFrame helpWindow = new JFrame("Game Help");
+		helpWindow.setPreferredSize(new Dimension(xSize,ySize));
+		helpWindow.setMinimumSize(new Dimension(xSize,ySize));
+		((JPanel)helpWindow.getContentPane()).setBorder(new EmptyBorder(blankSpace, blankSpace, blankSpace, blankSpace));
+		helpWindow.setLocationRelativeTo(null);
+		
+		String helpInput = 
+		"THIS IS WHERE THE GAME RULES GO " + "\n" + "THIS IS WHERE THE GAME RULES GO " + "\n" + "THIS IS WHERE THE GAME RULES GO "
+				+ "\n" + "THIS IS WHERE THE GAME RULES GO " + "\n" + "THIS IS WHERE THE GAME RULES GO ";		
+		JTextArea helpText = new JTextArea(helpInput);
+		helpText.setLayout(new FlowLayout());
+		helpText.setEditable(false);
+		//helpText.setForeground(Color.WHITE);
+		helpText.setBackground(new Color(211,211,211));
+		
+		helpWindow.getContentPane().setBackground(new Color(169, 169, 169));
+		helpWindow.add(helpText);
+		helpWindow.pack();
+		helpWindow.setVisible(true);
+	}
+       
+}

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Player
+comment0.text=\r\n\ Abstract\ Player\ class,\ most\ of\ the\ functionality\ is\ unused\r\n
+comment1.params=
+comment1.target=int\ getScore()
+comment2.params=
+comment2.target=int\ getHits()
+comment3.params=hits
+comment3.target=void\ setHits(int)
+comment4.params=
+comment4.target=int\ getMisses()
+comment5.params=misses
+comment5.target=void\ setMisses(int)
+comment6.params=
+comment6.target=int\ getShotsFired()
+comment7.params=shots
+comment7.target=void\ setShotsFired(int)
+numComments=8

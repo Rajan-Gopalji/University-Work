@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;group-project-dev-83166f2a67e10c4b0f760741001c99ab76120d69&apos;" deleteContents="false" description="Delete resource &apos;group-project-dev-83166f2a67e10c4b0f760741001c99ab76120d69&apos;" element1="/group-project-dev-83166f2a67e10c4b0f760741001c99ab76120d69" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1508157646161"/>&#x0A;<refactoring comment="Delete resource &apos;cs1410-master&apos;" deleteContents="false" description="Delete resource &apos;cs1410-master&apos;" element1="/cs1410-master" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1508355907516"/>
+</session>

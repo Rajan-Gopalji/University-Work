@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Shot
+comment0.text=\r\n\ User\:\ dogmaan\r\n\ Date\:\ 06/06/12\r\n\ Time\:\ 16\:30\r\n
+comment1.params=shotStatus
+comment1.target=Shot(ShotStatus)
+comment2.params=
+comment2.target=Owner\ getShotOwner()
+comment3.params=shotOwner
+comment3.target=void\ setShotOwner(Owner)
+comment4.params=
+comment4.target=ShotStatus\ getShotStatus()
+comment5.params=shotStatus
+comment5.target=void\ setShotStatus(ShotStatus)
+comment6.params=
+comment6.target=java.awt.Dimension\ dimensions()
+numComments=7

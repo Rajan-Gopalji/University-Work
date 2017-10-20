@@ -1,0 +1,23 @@
+#BlueJ package file
+objectbench.height=93
+objectbench.width=768
+package.editor.height=393
+package.editor.width=670
+package.editor.x=313
+package.editor.y=100
+package.numDependencies=0
+package.numTargets=2
+package.showExtends=true
+package.showUses=true
+target1.height=62
+target1.name=battleships
+target1.type=PackageTarget
+target1.width=90
+target1.x=10
+target1.y=90
+target2.height=62
+target2.name=base
+target2.type=PackageTarget
+target2.width=80
+target2.x=160
+target2.y=10

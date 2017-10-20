@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=w1\ w2
+comment0.target=WordCollider(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ WordCollider\r\n
+comment1.params=a\ w
+comment1.target=void\ fillChars(Text[],\ java.lang.String)
+comment2.params=
+comment2.target=void\ animate()
+comment2.text=\r\n\ Randomize\ the\ position\ of\ the\ two\ words\ repeatedly\ and\ stop\r\n\ when\ the\ bounding\ box\ of\ the\ two\ words\ overlaps.\r\n
+comment3.params=
+comment3.target=void\ clearDisplay()
+comment3.text=\r\n\ erase\ the\ words\ and\ any\ other\ characters\ on\ the\ display\r\n
+comment4.params=
+comment4.target=java.lang.Boolean\ checkOverlap()
+comment4.text=\r\n\ check\ if\ the\ bounding\ box\ of\ the\ two\ words\ overlaps.\r\n\ @return\ true\ when\ the\ words\ overlap\ and\ false\ otherwise.\r\n
+numComments=5

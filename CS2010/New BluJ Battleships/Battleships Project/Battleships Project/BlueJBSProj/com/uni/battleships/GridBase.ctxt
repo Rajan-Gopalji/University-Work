@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=GridBase
+comment0.text=\r\n\ Base\ class\ for\ the\ various\ possible\ grid\ types\r\n\ @param\ <T>\r\n
+comment1.params=
+comment1.target=java.lang.Object[][]\ getGrid()
+comment1.text=\r\n\ this\ returns\ a\ generic\ multidimensional\ object\ array\r\n\ it\ must\ be\ cast\ to\ the\ correct\ object\ type\r\n\ @return\ \ T[][]\r\n
+comment2.params=Width\ Height
+comment2.target=void\ setDimensions(int,\ int)
+comment2.text=\r\n\ Sets\ the\ dimensions\ of\ the\ grid\r\n\ @param\ Width\r\n\ @param\ Height\r\n
+comment3.params=x\ y\ obj
+comment3.target=boolean\ willObjectFit(int,\ int,\ java.lang.Object)
+comment3.text=\r\n\ abstract\ function\ to\ check\ if\ the\ object\ will\ fit\r\n\ within\ the\ grid\ boundaries\r\n\ @param\ x\r\n\ @param\ y\r\n\ @param\ obj\r\n\ @return\r\n
+comment4.params=x\ y\ obj
+comment4.target=boolean\ addObject(int,\ int,\ java.lang.Object)
+comment4.text=\r\n\ add\ object\ to\ grid\r\n\ @param\ x\r\n\ @param\ y\r\n\ @param\ obj\r\n\ @return\r\n
+comment5.params=
+comment5.target=void\ clear()
+comment5.text=\r\n\ Clear\ the\ grid\r\n
+numComments=6

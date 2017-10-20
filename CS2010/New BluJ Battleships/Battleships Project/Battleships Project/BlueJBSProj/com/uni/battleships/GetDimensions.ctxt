@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=GetDimensions
+comment0.text=\r\n\ A\ class\ that\ implements\ this\ interface\r\n\ must\ have\ a\ width\ and\ height\r\n\ this\ is\ used\ for\ grid\ collision\ detection\r\n\ when\ placing\ a\ ship\r\n
+comment1.params=
+comment1.target=java.awt.Dimension\ dimensions()
+numComments=2
